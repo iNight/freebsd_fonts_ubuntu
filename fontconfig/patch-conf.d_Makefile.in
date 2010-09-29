@@ -1,0 +1,69 @@
+--- conf.d/Makefile.in.orig	2010-01-13 19:05:52.014482215 -0500
++++ conf.d/Makefile.in	2010-01-13 19:13:52.310959542 -0500
+@@ -252,7 +252,12 @@
+ 	README
+ 
+ CONF_FILES = \
++ 	10-antialias.conf \
+ 	10-autohint.conf \
++ 	10-hinting.conf \
++ 	10-hinting-full.conf \
++ 	10-hinting-medium.conf \
++ 	10-hinting-slight.conf \
+ 	10-no-sub-pixel.conf \
+ 	10-sub-pixel-bgr.conf \
+ 	10-sub-pixel-rgb.conf \
+@@ -269,6 +274,7 @@
+ 	49-sansserif.conf \
+ 	50-user.conf \
+ 	51-local.conf \
++ 	53-monospace-lcd-filter.conf \
+ 	60-latin.conf \
+ 	65-fonts-persian.conf \
+ 	65-khmer.conf \
+@@ -280,6 +286,9 @@
+ 	90-synthetic.conf
+ 
+ CONF_LINKS = \
++ 	10-antialias.conf \
++ 	10-hinting.conf \
++ 	10-hinting-slight.conf \
+ 	20-fix-globaladvance.conf \
+ 	20-unhint-small-vera.conf \
+ 	30-urw-aliases.conf \
+@@ -289,6 +298,7 @@
+ 	49-sansserif.conf \
+ 	50-user.conf \
+ 	51-local.conf \
++ 	53-monospace-lcd-filter.conf \
+ 	60-latin.conf \
+ 	65-fonts-persian.conf \
+ 	65-nonlatin.conf \
+--- conf.d/Makefile.in.orig	2010-01-13 19:16:56.662484262 -0500
++++ conf.d/Makefile.in	2010-01-13 19:16:57.691482777 -0500
+@@ -264,6 +264,7 @@
+ 	10-sub-pixel-vbgr.conf \
+ 	10-sub-pixel-vrgb.conf \
+ 	10-unhinted.conf \
++	11-lcd-filter-lcddefault.conf \
+ 	20-fix-globaladvance.conf \
+ 	20-unhint-small-vera.conf \
+ 	25-unhint-nonlatin.conf \
+@@ -289,6 +290,7 @@
+  	10-antialias.conf \
+  	10-hinting.conf \
+  	10-hinting-slight.conf \
++	11-lcd-filter-lcddefault.conf \
+ 	20-fix-globaladvance.conf \
+ 	20-unhint-small-vera.conf \
+ 	30-urw-aliases.conf \
+--- conf.d/Makefile.in.orig	2010-01-13 19:21:19.383482947 -0500
++++ conf.d/Makefile.in	2010-01-13 19:22:25.718516776 -0500
+@@ -305,6 +305,7 @@
+ 	65-fonts-persian.conf \
+ 	65-nonlatin.conf \
+ 	69-unifont.conf \
++	70-no-bitmaps.conf \
+ 	80-delicious.conf \
+ 	90-synthetic.conf
+ 
