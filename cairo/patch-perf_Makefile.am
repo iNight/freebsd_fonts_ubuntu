@@ -1,0 +1,21 @@
+--- perf/Makefile.am	2010-09-06 23:48:27.619417195 +0200
++++ perf/Makefile.am	2010-09-06 23:49:18.531419987 +0200
+@@ -10,6 +10,18 @@
+ 
+ AM_LDFLAGS = $(CAIRO_LDFLAGS)
+ 
++if CAIRO_HAS_PERF_UTILS
++bin_PROGRAMS = cairo-perf-micro \
++	cairo-perf-trace \
++	cairo-perf-diff-files \
++	cairo-perf-print \
++	cairo-perf-chart \
++	cairo-perf-compare-backends
++if HAVE_GTK
++bin_PROGRAMS += cairo-perf-graph-files
++endif
++endif
++
+ EXTRA_PROGRAMS += cairo-perf-micro \
+ 		  cairo-perf-trace \
+ 		  cairo-perf-diff-files \
