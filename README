@@ -1,1 +1,8 @@
-Patch from ubuntu for freebsd ports tree.
+Patch from ubuntu fonts for freebsd ports tree.
+
+cp cairo/*        /usr/ports/graphics/cairo/files/
+cp fontconfig/*   /usr/ports/x11-fonts/fontconfig/files/
+cp freetype2/*    /usr/ports/print/freetype2/files/
+
+mkdir /usr/ports/x11-fonts/libXft/files
+cp libxft/*       /usr/ports/x11-fonts/libXft/files/
