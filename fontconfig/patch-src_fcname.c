@@ -1,4 +1,4 @@
---- src/fcname.c.orig	2008-09-12 17:27:25.000000000 +0000
+--- src/fcname.c	2008-09-12 17:27:25.000000000 +0000
 +++ src/fcname.c	2008-09-12 17:31:54.000000000 +0000
 @@ -441,5 +441,6 @@
      { (FcChar8 *) "lcddefault",	    "lcdfilter",    FC_LCD_DEFAULT },
