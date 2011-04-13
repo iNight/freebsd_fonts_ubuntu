@@ -1,4 +1,4 @@
---- src/xftint.h.orig
+--- src/xftint.h
 +++ src/xftint.h
 @@ -145,6 +145,7 @@
      FcBool		antialias;	/* doing antialiasing */

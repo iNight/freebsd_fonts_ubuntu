@@ -1,4 +1,4 @@
---- src/xftglyphs.c.orig
+--- src/xftglyphs.c
 +++ src/xftglyphs.c
 @@ -21,27 +21,18 @@
   */

@@ -1,4 +1,4 @@
---- src/xftfreetype.c.orig
+--- src/xftfreetype.c
 +++ src/xftfreetype.c
 @@ -469,6 +469,21 @@
  	goto bail1;
