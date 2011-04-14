@@ -1,5 +1,5 @@
---- configure.ac	2010-09-06 23:48:27.643436170 +0200
-+++ configure.ac	2010-09-06 23:49:18.527408723 +0200
+--- configure.ac	2010-12-28 14:41:21.499228916 +0100
++++ configure.ac	2010-12-28 14:42:06.162226875 +0100
 @@ -796,6 +796,11 @@
  PKG_CHECK_MODULES(gtk, "gtk+-2.0",have_gtk=yes, have_gtk=no)
  AM_CONDITIONAL(HAVE_GTK, test "x$have_gtk" = "xyes")
@@ -12,11 +12,11 @@
  AC_CONFIG_FILES([
  Makefile
  boilerplate/Makefile
---- configure.ac	2010-09-06 23:47:04.384406681 +0200
-+++ configure.ac	2010-09-06 23:47:15.719410978 +0200
+--- configure.ac	2010-12-28 14:43:02.291226995 +0100
++++ configure.ac	2010-12-28 14:43:18.191141863 +0100
 @@ -10,6 +10,7 @@
- AC_CONFIG_AUX_DIR(build)
- AC_CONFIG_MACRO_DIR(build)
+ AC_CONFIG_SRCDIR(src/cairo.h)
+ AC_CONFIG_HEADERS(config.h)
  AM_INIT_AUTOMAKE([1.9.6 gnu -Wall no-define])
 +AM_MAINTAINER_MODE
  m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])

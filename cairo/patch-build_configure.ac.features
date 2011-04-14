@@ -1,5 +1,5 @@
---- build/configure.ac.features	2010-09-06 23:48:27.603407060 +0200
-+++ build/configure.ac.features	2010-09-06 23:49:18.531419987 +0200
+--- build/configure.ac.features	2010-12-28 14:41:21.487225155 +0100
++++ build/configure.ac.features	2010-12-28 14:42:06.166239606 +0100
 @@ -407,6 +407,7 @@
  	echo "The following features and utilities:"
  	echo "  cairo-trace:                $use_trace"

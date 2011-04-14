@@ -1,5 +1,5 @@
---- perf/Makefile.am	2010-09-06 23:48:27.619417195 +0200
-+++ perf/Makefile.am	2010-09-06 23:49:18.531419987 +0200
+--- perf/Makefile.am	2010-06-18 13:47:11.000000000 +0200
++++ perf/Makefile.am	2010-12-28 14:42:06.162226875 +0100
 @@ -10,6 +10,18 @@
  
  AM_LDFLAGS = $(CAIRO_LDFLAGS)
@@ -19,3 +19,5 @@
  EXTRA_PROGRAMS += cairo-perf-micro \
  		  cairo-perf-trace \
  		  cairo-perf-diff-files \
+Index: cairo/build/configure.ac.features
+===================================================================
