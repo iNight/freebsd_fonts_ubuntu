@@ -1,6 +1,7 @@
 get() {
   url=$1; name=$2; extension=$3; md5=$4
 
+  echo $url
   echo -n "Fetching $name -> "
   wget -q $url
   echo "done"
