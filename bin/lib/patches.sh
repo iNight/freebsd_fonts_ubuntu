@@ -1,7 +1,8 @@
 patches() {
+  patch_dir=$1
   mkdir files
-  for _f in $(cat debian/patches/series) ; do
-    echo "debian/patches/$_f"
-    (cd files && splitdiff -ad ../debian/patches/$_f)
+  for _f in $(cat ${patch_dir}/series) ; do
+    echo "${patch_dir}/$_f"
+    (cd files && splitdiff -ad ../${patch_dir}/$_f)
   done
 }

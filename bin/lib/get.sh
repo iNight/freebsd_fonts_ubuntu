@@ -17,8 +17,9 @@ get() {
 
   echo -n "Extracting $name -> "
   case $extension in
-    .tar.gz) tar xzf $name;;
-    .gz)     gunzip -c $name | patch -sp1;;
+    .tar.gz)  tar xzf $name;;
+    .tar.bz2) tar xjf $name;;
+    .gz)      gunzip -c $name | patch -sp1;;
   esac
   echo "finish."
   rm $name
